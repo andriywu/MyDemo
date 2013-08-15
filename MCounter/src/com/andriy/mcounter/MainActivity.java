@@ -77,7 +77,7 @@ public class MainActivity extends Activity implements CountFinishListener{
 				
 				if(isAlarm){
 					//具体的报警操作，更具三个标志位
-					if(isScreenAlarm){
+					if(isScreenAlarm){//屏幕闪烁提示
 						if(colorCount < colorStr.length){
 							lyMain.setBackgroundColor(new Color().parseColor(colorStr[colorCount]));
 							colorCount++;
@@ -86,6 +86,12 @@ public class MainActivity extends Activity implements CountFinishListener{
 							lyMain.setBackgroundColor(new Color().parseColor(colorStr[colorCount]));
 							colorCount++;
 						}
+					}
+					if(isVibrate){//震动提示
+						 
+					}
+					if(isSound){//声音提示
+						
 					}
 					Message message = new Message();
 					message.what = MSG_ALARM;
