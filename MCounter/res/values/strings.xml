@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MCounter</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    
+    <!-- Main -->
+	<string name="main_list">EDIT</string>
+	<string name="main_start">START</string>
+	<string name="main_stop">STOP</string>
+	<string name="main_exit">EXIT</string>
+	
+	<!-- TimerPicker -->
+	<string name="time_hour">H</string>
+	<string name="time_min">M</string>
+	<string name="time_sec">S</string>
+	<string name="time_add">+</string>
+	<string name="time_minus">-</string>
+	
+	<!-- Dialog -->
+	<string name="dialog_ok">OK</string>
+	<string name="dialog_cancle">CANCEL</string>
+</resources>

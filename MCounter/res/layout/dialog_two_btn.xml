@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_dialog_bg"
+    android:padding="5dp"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        >
+		<TextView 
+		    android:id="@+id/tv_dialog_title"
+		    android:layout_height="wrap_content"
+		    android:layout_width="wrap_content"
+		    android:ems="8"
+		    />
+		<TextView 
+		    android:id="@+id/tv_dialog_content"
+		    android:layout_height="wrap_content"
+		    android:layout_width="wrap_content"
+		    />
+        
+    </LinearLayout>
+    <ImageView 
+        android:background="@android:color/white"
+        android:layout_height="3dp"
+        android:layout_width="fill_parent"
+        />
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+		<Button 
+		    android:layout_height="wrap_content"
+		    android:layout_width="0dp"
+		    android:layout_weight="1"
+		    android:text="button1"
+		    style="@style/TextDialogBtn"
+		    android:background="@android:color/transparent"
+		    android:layout_margin="10dp"
+		    />
+		<ImageView 
+		    android:layout_height="fill_parent"
+		    android:layout_width="3dp"
+		    android:background="@android:color/white"
+		    
+		    />
+		<Button 
+		    android:layout_height="wrap_content"
+		    android:layout_width="0dp"
+		    android:layout_weight="1"
+		    android:text="button2"
+		    style="@style/TextDialogBtn"
+		    android:background="@android:color/transparent"
+		    android:layout_margin="10dp"
+		    />
+        
+    </LinearLayout>
+
+</LinearLayout>

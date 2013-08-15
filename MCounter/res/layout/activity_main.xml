@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/shap_background"
+    android:gravity="center_horizontal"
+    android:id="@+id/ly_bg"
+    tools:context=".MainActivity" >
+    <RelativeLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        >
+        <com.andriy.mcounter.view.ThreeCircleView
+	        android:id="@+id/view_circle"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+	        android:layout_margin="20dp"
+	        />
+        <TextView 
+            android:id="@+id/tv_comment"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:text="鸡蛋"
+            android:layout_below="@+id/view_circle"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            />
+        
+    </RelativeLayout>
+    <LinearLayout 
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical">
+        <Button 
+            android:layout_margin="20dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_btn"
+            android:layout_weight="1"
+            android:text="@string/main_list"
+            style="@style/MainBtnTextStyle"
+            android:onClick="btnList"
+            />
+        <Button 
+            android:id="@+id/btn_start"
+            android:layout_margin="20dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_btn"
+            android:layout_weight="1"
+            android:text="@string/main_start"
+            style="@style/MainBtnTextStyle"
+            android:onClick="btnStart"
+            />
+        <Button 
+            android:layout_margin="20dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_btn"
+            android:layout_weight="1"
+            android:text="@string/main_exit"
+            style="@style/MainBtnTextStyle"
+            android:onClick="btnExit"
+            />
+        
+    </LinearLayout>
+
+
+</LinearLayout>
